@@ -201,6 +201,13 @@
                                     <constraint firstItem="tn4-ce-6bU" firstAttribute="centerX" secondItem="U5H-G6-bv4" secondAttribute="centerX" id="xRP-CY-bRR"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezU-sl-Amj">
+                                <rect key="frame" x="33" y="338" width="348" height="454"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="454" id="XCL-FS-REr"/>
+                                </constraints>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ujT-ch-5Jm" userLabel="MainImageView">
                                 <rect key="frame" x="33" y="338" width="348" height="454"/>
                                 <constraints>
@@ -213,13 +220,20 @@
                                     <constraint firstAttribute="height" constant="454" id="DT5-Fu-yJS"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezU-sl-Amj">
-                                <rect key="frame" x="33" y="338" width="348" height="454"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6u-qy-ST8">
+                                <rect key="frame" x="33" y="809" width="348" height="46"/>
+                                <color key="backgroundColor" red="0.86278313399999995" green="0.19877994039999999" blue="0.1881462867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="454" id="XCL-FS-REr"/>
+                                    <constraint firstAttribute="height" constant="46" id="35E-Go-B3f"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Entree -&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Khf-Qa-fzu" kind="show" id="4vh-cs-kLI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29209822416305542" green="0.56429767608642578" blue="0.88727426528930664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -228,19 +242,22 @@
                             <constraint firstItem="ezU-sl-Amj" firstAttribute="leading" secondItem="9uI-qn-8Sw" secondAttribute="leading" constant="33" id="6Oh-uk-Uzk"/>
                             <constraint firstItem="9uI-qn-8Sw" firstAttribute="trailing" secondItem="ujT-ch-5Jm" secondAttribute="trailing" constant="33" id="9mV-Ii-66p"/>
                             <constraint firstItem="U5H-G6-bv4" firstAttribute="centerX" secondItem="b3F-Oh-CsM" secondAttribute="centerX" id="BSd-51-szZ"/>
+                            <constraint firstItem="9uI-qn-8Sw" firstAttribute="trailing" secondItem="Y6u-qy-ST8" secondAttribute="trailing" constant="33" id="EvR-xq-4JC"/>
                             <constraint firstItem="9uI-qn-8Sw" firstAttribute="trailing" secondItem="MNK-wC-C3T" secondAttribute="trailing" constant="33" id="K6K-aU-YCq"/>
                             <constraint firstItem="MNK-wC-C3T" firstAttribute="leading" secondItem="9uI-qn-8Sw" secondAttribute="leading" constant="33" id="RAN-i2-smP"/>
+                            <constraint firstItem="9uI-qn-8Sw" firstAttribute="bottom" secondItem="Y6u-qy-ST8" secondAttribute="bottom" constant="7" id="b4M-iF-ell"/>
                             <constraint firstItem="ujT-ch-5Jm" firstAttribute="leading" secondItem="9uI-qn-8Sw" secondAttribute="leading" constant="33" id="dOI-gm-oxs"/>
                             <constraint firstItem="9uI-qn-8Sw" firstAttribute="bottom" secondItem="ujT-ch-5Jm" secondAttribute="bottom" constant="70" id="gJG-Hc-BWX"/>
                             <constraint firstItem="9uI-qn-8Sw" firstAttribute="bottom" secondItem="ezU-sl-Amj" secondAttribute="bottom" constant="70" id="heB-pO-abt"/>
                             <constraint firstItem="U5H-G6-bv4" firstAttribute="centerY" secondItem="b3F-Oh-CsM" secondAttribute="centerY" constant="-288.5" id="ng0-nw-TPq"/>
+                            <constraint firstItem="Y6u-qy-ST8" firstAttribute="leading" secondItem="9uI-qn-8Sw" secondAttribute="leading" constant="33" id="pw8-Ye-DUi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9uI-qn-8Sw"/>
                     </view>
                     <connections>
+                        <outlet property="EntreeButton" destination="Y6u-qy-ST8" id="2jp-lg-zd9"/>
                         <outlet property="mainImageView" destination="ujT-ch-5Jm" id="0dd-ca-VI9"/>
                         <outlet property="tempImageView" destination="MNK-wC-C3T" id="sA3-WG-Ajr"/>
-                        <segue destination="Khf-Qa-fzu" kind="show" identifier="goToEntreeIntro" id="Qdw-bh-FJh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2g-HC-9kB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -387,7 +404,7 @@
         <!--Entree Controller-->
         <scene sceneID="Q5q-zX-9rf">
             <objects>
-                <viewController id="cfe-ZO-aNd" userLabel="Entree Controller" customClass="ViewController" customModule="Quizzler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cfe-ZO-aNd" userLabel="Entree Controller" customClass="EntreeController" customModule="Ambrainsia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Wv-LE-AuD"/>
                         <viewControllerLayoutGuide type="bottom" id="qGg-dV-glR"/>
@@ -474,7 +491,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="answerPressed:" destination="cfe-ZO-aNd" eventType="touchUpInside" id="R5G-D4-7lx"/>
+                                            <action selector="answerPressed:" destination="cfe-ZO-aNd" eventType="touchUpInside" id="05Z-Ej-M1c"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEP-vq-8tu" userLabel="True Button">
@@ -495,7 +512,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="answerPressed:" destination="cfe-ZO-aNd" eventType="touchUpInside" id="L6I-UY-Qg3"/>
+                                            <action selector="answerPressed:" destination="cfe-ZO-aNd" eventType="touchUpInside" id="BaE-mf-8hn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -528,10 +545,10 @@
                         <viewLayoutGuide key="safeArea" id="nl9-Mw-rBH"/>
                     </view>
                     <connections>
-                        <outlet property="progressBar" destination="AsE-Z3-6Pd" id="dgS-1s-08t"/>
-                        <outlet property="progressLabel" destination="3fx-Xj-LJn" id="Dav-uM-bxs"/>
-                        <outlet property="questionLabel" destination="lcd-yv-8nA" id="QLK-da-WrA"/>
-                        <outlet property="scoreLabel" destination="s83-YW-BQu" id="wPW-2J-MZH"/>
+                        <outlet property="progressBar" destination="AsE-Z3-6Pd" id="vUn-D5-9RF"/>
+                        <outlet property="progressLabel" destination="3fx-Xj-LJn" id="j0X-hW-4c8"/>
+                        <outlet property="questionLabel" destination="lcd-yv-8nA" id="u5n-Me-kHN"/>
+                        <outlet property="scoreLabel" destination="s83-YW-BQu" id="zc0-G3-nSe"/>
                         <segue destination="O8a-Yl-KiV" kind="show" identifier="goToDesertIntro" id="PBB-Dq-7CO"/>
                     </connections>
                 </viewController>

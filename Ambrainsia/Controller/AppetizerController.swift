@@ -12,6 +12,7 @@ class AppetizerController: UIViewController {
 
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var tempImageView: UIImageView!
+    @IBOutlet weak var EntreeButton: UIButton!
     
     
     // MARK: Var for Drawing
@@ -25,12 +26,15 @@ class AppetizerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
+        EntreeButton.isHidden = true
+        
+        Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
         
     }
     
     @objc func timeToMoveOn() {
-        self.performSegue(withIdentifier: "goToDesertIntro", sender: self)
+        EntreeButton.isHidden = false
+        //self.performSegue(withIdentifier: "goToDesertIntro", sender: self)
     }
     
     

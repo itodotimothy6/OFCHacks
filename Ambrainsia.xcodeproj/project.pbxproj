@@ -18,6 +18,10 @@
 		85FDE3C12295968E007080CD /* EntreeIntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FDE3C02295968E007080CD /* EntreeIntroController.swift */; };
 		85FDE3C3229596AF007080CD /* DesertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FDE3C2229596AF007080CD /* DesertController.swift */; };
 		85FDE3C5229596D2007080CD /* DesertIntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FDE3C4229596D2007080CD /* DesertIntroController.swift */; };
+		85FDE3CC2295EC85007080CD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FDE3CB2295EC85007080CD /* Question.swift */; };
+		85FDE3CE2295EC9A007080CD /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FDE3CD2295EC9A007080CD /* QuestionBank.swift */; };
+		85FDE3D52295F59A007080CD /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FDE3D22295F599007080CD /* ProgressHUD.m */; };
+		85FDE3D62295F59A007080CD /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85FDE3D32295F599007080CD /* ProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,12 @@
 		85FDE3C02295968E007080CD /* EntreeIntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntreeIntroController.swift; sourceTree = "<group>"; };
 		85FDE3C2229596AF007080CD /* DesertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertController.swift; sourceTree = "<group>"; };
 		85FDE3C4229596D2007080CD /* DesertIntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertIntroController.swift; sourceTree = "<group>"; };
+		85FDE3CB2295EC85007080CD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		85FDE3CD2295EC9A007080CD /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		85FDE3D12295F599007080CD /* Ambrainsia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ambrainsia-Bridging-Header.h"; sourceTree = "<group>"; };
+		85FDE3D22295F599007080CD /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		85FDE3D32295F599007080CD /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		85FDE3D42295F599007080CD /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +76,14 @@
 		8509FB3122956B3000D4DD02 /* Ambrainsia */ = {
 			isa = PBXGroup;
 			children = (
+				85FDE3D32295F599007080CD /* ProgressHUD.bundle */,
+				85FDE3D42295F599007080CD /* ProgressHUD.h */,
+				85FDE3D22295F599007080CD /* ProgressHUD.m */,
+				85FDE3CA2295EC65007080CD /* Model */,
 				85FDE3C722959722007080CD /* View */,
 				85FDE3C6229596D9007080CD /* Controller */,
 				8509FB3E22956B3400D4DD02 /* Info.plist */,
+				85FDE3D12295F599007080CD /* Ambrainsia-Bridging-Header.h */,
 			);
 			path = Ambrainsia;
 			sourceTree = "<group>";
@@ -96,6 +111,15 @@
 				8509FB3922956B3400D4DD02 /* Assets.xcassets */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		85FDE3CA2295EC65007080CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85FDE3CB2295EC85007080CD /* Question.swift */,
+				85FDE3CD2295EC9A007080CD /* QuestionBank.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +154,7 @@
 				TargetAttributes = {
 					8509FB2E22956B3000D4DD02 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -156,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85FDE3D62295F59A007080CD /* ProgressHUD.bundle in Resources */,
 				8509FB3D22956B3400D4DD02 /* LaunchScreen.storyboard in Resources */,
 				8509FB3A22956B3400D4DD02 /* Assets.xcassets in Resources */,
 				8509FB3822956B3000D4DD02 /* Main.storyboard in Resources */,
@@ -172,7 +198,10 @@
 				8509FB3522956B3000D4DD02 /* ViewController.swift in Sources */,
 				85FDE3C3229596AF007080CD /* DesertController.swift in Sources */,
 				85FDE3C12295968E007080CD /* EntreeIntroController.swift in Sources */,
+				85FDE3CE2295EC9A007080CD /* QuestionBank.swift in Sources */,
+				85FDE3CC2295EC85007080CD /* Question.swift in Sources */,
 				85FDE3BD2295963F007080CD /* AppetizerIntroController.swift in Sources */,
+				85FDE3D52295F59A007080CD /* ProgressHUD.m in Sources */,
 				85FDE3BF2295966A007080CD /* EntreeController.swift in Sources */,
 				85FDE3C5229596D2007080CD /* DesertIntroController.swift in Sources */,
 				8509FB3322956B3000D4DD02 /* AppDelegate.swift in Sources */,
@@ -322,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J4YLJCRFF;
 				INFOPLIST_FILE = Ambrainsia/Info.plist;
@@ -331,6 +361,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.timothyItodo.Ambrainsia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ambrainsia/Ambrainsia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J4YLJCRFF;
 				INFOPLIST_FILE = Ambrainsia/Info.plist;
@@ -349,6 +382,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.timothyItodo.Ambrainsia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ambrainsia/Ambrainsia-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
