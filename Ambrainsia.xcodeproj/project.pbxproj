@@ -91,14 +91,14 @@
 		85FDE3C6229596D9007080CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				85FDE3BA2295960A007080CD /* AppetizerController.swift */,
+				8509FB3222956B3000D4DD02 /* AppDelegate.swift */,
 				8509FB3422956B3000D4DD02 /* ViewController.swift */,
+				85FDE3BC2295963F007080CD /* AppetizerIntroController.swift */,
+				85FDE3BA2295960A007080CD /* AppetizerController.swift */,
 				85FDE3C02295968E007080CD /* EntreeIntroController.swift */,
 				85FDE3BE2295966A007080CD /* EntreeController.swift */,
-				85FDE3C2229596AF007080CD /* DesertController.swift */,
-				85FDE3BC2295963F007080CD /* AppetizerIntroController.swift */,
 				85FDE3C4229596D2007080CD /* DesertIntroController.swift */,
-				8509FB3222956B3000D4DD02 /* AppDelegate.swift */,
+				85FDE3C2229596AF007080CD /* DesertController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

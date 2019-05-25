@@ -18,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambrainsia" translatesAutoresizingMaskIntoConstraints="NO" id="2Ur-GR-fvs">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="698"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ambrainsia" translatesAutoresizingMaskIntoConstraints="NO" id="2Ur-GR-fvs">
+                                <rect key="frame" x="0.0" y="175" width="414" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y0-wO-ap4">
                                 <rect key="frame" x="0.0" y="694" width="414" height="40"/>
@@ -28,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="40" id="aRn-Ie-u2X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
-                                <state key="normal" title="Eat a Well Balanced Meal">
+                                <state key="normal" title="Eat">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -42,7 +43,7 @@
                                     <constraint firstAttribute="height" constant="40" id="QMO-jy-di4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
-                                <state key="normal" title="Reseve a Table">
+                                <state key="normal" title="Dine with Friends">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -53,7 +54,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ObB-BY-Tkp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
-                                <state key="normal" title="Your Diet Check">
+                                <state key="normal" title="Diet Check">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -68,12 +69,20 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ambrainsia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-hE-vMk">
+                                <rect key="frame" x="58" y="79" width="298" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.29209822416305542" green="0.56429767608642578" blue="0.88727426528930664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="4" height="-1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2Y0-wO-ap4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="283-Aa-fiJ"/>
-                            <constraint firstItem="Dgr-qc-5bM" firstAttribute="top" secondItem="2Ur-GR-fvs" secondAttribute="bottom" constant="37" id="7sG-LK-dTp"/>
-                            <constraint firstItem="2Ur-GR-fvs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ces-0S-gqN"/>
                             <constraint firstItem="GcZ-4E-nti" firstAttribute="top" secondItem="0gH-I9-s7M" secondAttribute="bottom" constant="1" id="MyR-1h-kxM"/>
                             <constraint firstItem="GcZ-4E-nti" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O7c-y0-rLx"/>
                             <constraint firstItem="0gH-I9-s7M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Oxb-d4-T9m"/>
@@ -82,8 +91,6 @@
                             <constraint firstItem="GcZ-4E-nti" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dlC-N7-zPO"/>
                             <constraint firstItem="0gH-I9-s7M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eJs-ab-QQ7"/>
                             <constraint firstItem="Dgr-qc-5bM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jd2-eO-Fim"/>
-                            <constraint firstItem="2Ur-GR-fvs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="quO-Hb-2gX"/>
-                            <constraint firstItem="2Ur-GR-fvs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rBb-qe-8WI"/>
                             <constraint firstItem="2Y0-wO-ap4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u3w-ai-0xf"/>
                             <constraint firstItem="0gH-I9-s7M" firstAttribute="top" secondItem="Dgr-qc-5bM" secondAttribute="bottom" constant="1" id="uqT-Lp-FTs"/>
                             <constraint firstItem="Dgr-qc-5bM" firstAttribute="top" secondItem="2Y0-wO-ap4" secondAttribute="bottom" constant="1" id="wWY-F0-ipY"/>
@@ -98,7 +105,6 @@
         <!--Appetizer Intro Controller-->
         <scene sceneID="mzN-XZ-xtl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IRj-WV-ela" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="pAo-DA-iC1" userLabel="Appetizer Intro Controller" customClass="AppetizerIntroController" customModule="Ambrainsia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nsv-BP-Sa7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -135,6 +141,10 @@
                                     <constraint firstAttribute="bottom" secondItem="7c5-2f-lSW" secondAttribute="bottom" constant="11" id="esd-vM-j96"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AmbrainsiaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1KQ-vg-sXx">
+                                <rect key="frame" x="112" y="667" width="189" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.29209822416305542" green="0.56429767608642578" blue="0.88727426528930664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -147,6 +157,7 @@
                         <segue destination="cmZ-zK-Ct5" kind="show" identifier="goToApetizer" id="2JG-CK-p1j"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRj-WV-ela" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773.91304347826087" y="-121.20535714285714"/>
         </scene>
@@ -227,7 +238,7 @@
                                     <constraint firstAttribute="height" constant="46" id="35E-Go-B3f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Entree -&gt;">
+                                <state key="normal" title="Entrée -&gt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -275,8 +286,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hag-GY-ehf">
                                 <rect key="frame" x="45.5" y="342" width="323" height="212"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entree" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmw-e2-Aa6">
-                                        <rect key="frame" x="0.0" y="21" width="323" height="63.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrée" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmw-e2-Aa6">
+                                        <rect key="frame" x="0.0" y="21" width="323" height="64"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="52"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -301,6 +312,10 @@
                                     <constraint firstItem="tmw-e2-Aa6" firstAttribute="top" secondItem="Hag-GY-ehf" secondAttribute="top" constant="21" id="fHF-H3-gGx"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AmbrainsiaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yFc-t7-KRT">
+                                <rect key="frame" x="113" y="685" width="189" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.86278313399999995" green="0.19877994039999999" blue="0.1881462867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -328,8 +343,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-ec-36f">
                                 <rect key="frame" x="20" y="356" width="374" height="184"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTl-nx-538">
-                                        <rect key="frame" x="0.0" y="11" width="374" height="63.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dessert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTl-nx-538">
+                                        <rect key="frame" x="0.0" y="11" width="374" height="64"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="52"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -354,6 +369,10 @@
                                     <constraint firstItem="J30-tj-ZMz" firstAttribute="centerX" secondItem="MOo-ec-36f" secondAttribute="centerX" id="rYD-gA-vBA"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AmbrainsiaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jPY-Jh-5tc">
+                                <rect key="frame" x="113" y="697" width="189" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.19215686269999999" green="0.63921568630000003" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -378,17 +397,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's finish with something sweet a little optimisitic treat!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlt-Mk-GfT">
-                                <rect key="frame" x="79" y="216" width="256" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recite the following..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlt-Mk-GfT">
+                                <rect key="frame" x="79" y="181" width="256" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZm-8I-00A">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dessert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZm-8I-00A">
                                 <rect key="frame" x="20" y="106" width="374" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="52"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-UE-Tpg">
+                                <rect key="frame" x="118" y="693" width="173" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                <state key="normal" title="Drink Time!"/>
+                                <connections>
+                                    <segue destination="umF-pr-xlj" kind="show" id="VdK-EG-U7B"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mic2" translatesAutoresizingMaskIntoConstraints="NO" id="e2o-hg-j8R">
+                                <rect key="frame" x="84" y="355" width="240" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am worthy, I am fearless &amp; I deserve a break from time to time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvh-Bh-kX3">
+                                <rect key="frame" x="43" y="207" width="322" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -399,7 +439,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbF-pw-MhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5352" y="-121"/>
+            <point key="canvasLocation" x="5350.7246376811599" y="-121.20535714285714"/>
+        </scene>
+        <!--DrinkSurvey Controller-->
+        <scene sceneID="PbJ-nc-ZEM">
+            <objects>
+                <viewController id="umF-pr-xlj" userLabel="DrinkSurvey Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ufi-oh-kH0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greatJobBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4US-Tk-y1H">
+                                <rect key="frame" x="-3" y="0.0" width="417" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Great Job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmX-ke-oZL">
+                                <rect key="frame" x="93" y="116" width="228" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your drink flavor based on how you feel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynp-Nh-7vK">
+                                <rect key="frame" x="70" y="197" width="274" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLm-io-XnK">
+                                <rect key="frame" x="267" y="319" width="67" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="coconutDrink"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thB-1a-qgo">
+                                <rect key="frame" x="187" y="330" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="blueJuice"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZh-Xb-L2a">
+                                <rect key="frame" x="94" y="330" width="39" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="plainJuice"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sluggish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6z-bJ-plx">
+                                <rect key="frame" x="82" y="387" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="neutral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0Z-Fd-481">
+                                <rect key="frame" x="180" y="387" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="energized" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBl-4C-UkF">
+                                <rect key="frame" x="271" y="387" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AmbrainsiaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jB7-U0-3qI">
+                                <rect key="frame" x="113" y="693" width="189" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="14l-Yh-tfE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="icp-HJ-bWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6155.072463768116" y="-121.20535714285714"/>
         </scene>
         <!--Entree Controller-->
         <scene sceneID="Q5q-zX-9rf">
@@ -444,7 +558,7 @@
                                         <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fx-Xj-LJn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fx-Xj-LJn">
                                         <rect key="frame" x="8" y="0.0" width="52" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="CEV-Wc-owW"/>
@@ -454,8 +568,8 @@
                                         <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AsE-Z3-6Pd">
-                                        <rect key="frame" x="0.0" y="25" width="24" height="14"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AsE-Z3-6Pd">
+                                        <rect key="frame" x="0.0" y="25" width="82" height="14"/>
                                         <color key="backgroundColor" red="0.92549019610000005" green="0.72941176470000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="t6o-kx-Qs5"/>
@@ -554,10 +668,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IQM-ex-9FM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3386" y="-121"/>
+            <point key="canvasLocation" x="3385.507246376812" y="-121.20535714285714"/>
         </scene>
     </scenes>
     <resources>
+        <image name="AmbrainsiaLogo" width="544" height="592"/>
         <image name="ambrainsia" width="800" height="648"/>
+        <image name="blueJuice" width="40" height="40"/>
+        <image name="coconutDrink" width="48" height="48"/>
+        <image name="greatJobBackground" width="1578" height="826"/>
+        <image name="mic2" width="64" height="64"/>
+        <image name="plainJuice" width="50" height="50"/>
     </resources>
 </document>

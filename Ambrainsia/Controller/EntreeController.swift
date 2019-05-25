@@ -43,23 +43,23 @@ class EntreeController: UIViewController {
     
     func updateUI() {
         scoreLabel.text = "Score: \(score)"
-        progressLabel.text = "\(questionIndex + 1)/13"
+        progressLabel.text = "\(questionIndex + 1)/5"
         
-        progressBar.frame.size.width = (view.frame.size.width / 13) * CGFloat(questionIndex + 1)
+        progressBar.frame.size.width = (view.frame.size.width / 5) * CGFloat(questionIndex + 1)
         
     }
     
     func nextQuestion() {
-        if questionIndex < 13 {
+        if questionIndex < 5 {
             questionLabel.text = allQuestions.list[questionIndex].questionText
             updateUI()
         }
         else {
             
-            let alert = UIAlertController(title: "Awesome", message: "You've finished all the questions. Do you want to start over?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Awesome!", message: "Now that you've scraped your plate, let's go ice the cake with some desert", preferredStyle: .alert)
             
-            let restartAction = UIAlertAction(title: "Restart", style: .default) { (UIAlertAction) in
-                self.startOver()
+            let restartAction = UIAlertAction(title: "Proceed to Desert!", style: .default) { (UIAlertAction) in
+                self.performSegue(withIdentifier: "goToDesertIntro", sender: self)
             }
             
             alert.addAction(restartAction)
@@ -80,9 +80,5 @@ class EntreeController: UIViewController {
         }
     }
     
-    func startOver() {
-        questionIndex = 0
-        score = 0
-        nextQuestion()
-    }
+
 }
