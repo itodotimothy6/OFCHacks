@@ -569,7 +569,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AsE-Z3-6Pd">
-                                        <rect key="frame" x="0.0" y="25" width="82" height="14"/>
+                                        <rect key="frame" x="0.0" y="25" width="32" height="14"/>
                                         <color key="backgroundColor" red="0.92549019610000005" green="0.72941176470000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="t6o-kx-Qs5"/>

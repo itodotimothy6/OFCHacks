@@ -43,14 +43,14 @@ class EntreeController: UIViewController {
     
     func updateUI() {
         scoreLabel.text = "Score: \(score)"
-        progressLabel.text = "\(questionIndex + 1)/5"
+        progressLabel.text = "\(questionIndex + 1)/13"
         
-        progressBar.frame.size.width = (view.frame.size.width / 5) * CGFloat(questionIndex + 1)
+        progressBar.frame.size.width = (view.frame.size.width / 13) * CGFloat(questionIndex + 1)
         
     }
     
     func nextQuestion() {
-        if questionIndex < 5 {
+        if questionIndex < 13 {
             questionLabel.text = allQuestions.list[questionIndex].questionText
             updateUI()
         }
